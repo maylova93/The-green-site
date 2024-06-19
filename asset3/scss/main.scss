@@ -1,5 +1,6 @@
 //*COMPONENTS
 @use '../scss/components/greenCheck';
+@use '../scss/components/resources';
 
 
 //*HELPERS
@@ -7,5 +8,5 @@
 
 body {
     font-family: $font-family;
-    background-color: $primary-green;
+    // background-color: $primary-green;
 }

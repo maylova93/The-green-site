@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #40A578;
   align-items: center;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -73,7 +74,88 @@
   background-color: #E6FF94;
 }
 
+.resources {
+  position: relative;
+  background-color: #A5DD9B;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  height: 100vh;
+  overflow: hidden;
+}
+.resources h2 {
+  color: #006769;
+  font-size: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+}
+@media (max-width: 768px) {
+  .resources h2 {
+    margin-top: 10rem;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+}
+.resources p {
+  color: #006769;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-left: 5rem;
+}
+@media (max-width: 768px) {
+  .resources p {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+}
+.resources p a {
+  color: #006769;
+  text-decoration: none;
+  font-weight: bold;
+}
+.resources p a:hover {
+  text-decoration: underline;
+}
+.resources .resourceList {
+  margin-top: 2rem;
+}
+.resources .resourceList ul {
+  color: #006769;
+  margin-top: 3rem;
+  margin-left: 5.5rem;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .resources .resourceList ul {
+    margin-left: 2rem;
+  }
+}
+.resources .resourceList ul li {
+  margin-bottom: 2rem;
+}
+.resources .resourceList ul li a {
+  color: #006769;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.resources .resourceList ul li a:hover {
+  text-decoration: underline;
+}
+.resources .bigCircle {
+  position: absolute;
+  top: 100px;
+  right: -200px;
+  width: 1000px;
+  height: 1000px;
+  border: 2px solid #006769;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .resources .bigCircle {
+    display: none;
+  }
+}
+
 body {
   font-family: "Ubuntu Mono", monospace;
-  background-color: #40A578;
 }/*# sourceMappingURL=main.css.map */
