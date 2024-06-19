@@ -1,1 +1,79 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.greenCheck {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  height: 100vh;
+}
+.greenCheck h2 {
+  color: #E6FF94;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.greenCheck p {
+  color: #E6FF94;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .greenCheck p {
+    color: #FFFFFF;
+  }
+}
+.greenCheck form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.greenCheck form input {
+  padding: 1rem;
+  background-color: #A5DD9B;
+  border: 1px solid #40A578;
+  border-radius: 3rem;
+  margin-bottom: 5rem;
+  width: 500px;
+}
+.greenCheck form input::-moz-placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #006769;
+  text-align: center;
+}
+.greenCheck form input::placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #006769;
+  text-align: center;
+}
+.greenCheck form input:focus {
+  border-color: #E6FF94;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .greenCheck form input {
+    width: 400px;
+  }
+}
+.greenCheck form button {
+  padding: 10px 20px;
+  background-color: #A5DD9B;
+  color: #006769;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5rem;
+  width: 10rem;
+  cursor: pointer;
+}
+.greenCheck form button:hover {
+  background-color: #E6FF94;
+}
+
+body {
+  font-family: "Ubuntu Mono", monospace;
+  background-color: #40A578;
+}/*# sourceMappingURL=main.css.map */
