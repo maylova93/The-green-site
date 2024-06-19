@@ -15,6 +15,11 @@
   margin-bottom: 2rem;
   font-size: 2rem;
 }
+@media (max-width: 768px) {
+  .greenCheck h2 br {
+    display: none;
+  }
+}
 .greenCheck p {
   color: #E6FF94;
   margin-bottom: 2.5rem;
