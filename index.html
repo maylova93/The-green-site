@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/scss/main.css">
+    <script src= "assets/js/script.js" type="module" defer></script>
 </head>
 <body>
     <header>
     <nav>
         <ul>
-            <li><a href="#">CALCULATE /</a></li>
+            <li><a href="#calculate">CALCULATE /</a></li>
             <li><a href="#">GREENCHECK /</a></li>
             <li><a href="#">OUR MISSION /</a></li>
             <li><a href="#">RESOURCES</a></li>
@@ -19,14 +20,35 @@
     </nav>
     </header>
     <main>
-        <h1><div class="big-circle">
-            WEB<br>
-             CARBON<br>
-              EMISSION<br>
-               PROJECT</div> 
-        </h1>
-        <h2><div class="small-circle">SCROLL DOWN TO<br> 
-            LEARN MORE</div></h2>
+        <div class="container">
+        <div class="big-circle">
+            <h1>Web<br>Carbon<br> Emission<br>Project</h1>
+            <div class="small-circle"><h2>SCROLL DOWN TO<br> LEARN MORE</h2></div>
+            <div class="top-circle"><h3>CALCULATE</h3></div>
+         </div>
+         
+        </div>
+        <section class="calculate" id="calculate">
+            <h2>DID YOU KNOW</h2>
+            <p>The internet alone consumes <br> 416,2TWh electricity per year</p>
+            <p class="text">To begin calculation how much CO2 your website uses enter the URL<br>
+                 in the field below and hit calculate</p>
+                <input type="text" id="website" name="website" placeholder="www.website.com" >
+                <button type="button" id="calculateButton">CALCULATE</button>
+                <p id="result"></p>
+            </section>
+        <section class="footer">
+            <h5>footer</h5>
+        <div class="fot">
+            <div class="huge_circle">
+            <h2>WCE<br><span>project</span></h2>
+            <div class="small-circle"></h2></div>
+            </div>
+        </div>
+                
+            
+        
+        </section>
     </main>
 </body>
 </html>
