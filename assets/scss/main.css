@@ -244,8 +244,8 @@
   align-items: center;
 }
 .greenCheck h2 form input {
-  padding: rem;
-  background-color: #A5DD9B;
+  padding: 0;
+  background-color: red;
   border: 1px solid #40A578;
   border-radius: 3rem;
   margin-bottom: 5rem;
@@ -271,7 +271,7 @@
 @media (max-width: 768px) {
   .greenCheck h2 form input {
     width: 272px;
-    height: 0px;
+    height: 70px;
   }
 }
 .greenCheck h2 form input .greenCheck .green_input input {
@@ -679,4 +679,4 @@ main .top-circle h3 {
     margin-top: 72px;
     margin-left: 63px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
