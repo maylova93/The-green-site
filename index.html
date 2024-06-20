@@ -3,14 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The-green-site</title>
-    <link rel="stylesheet" href="">
-    <script src="assets/script/footer.js" defer></script>
+    <title>WCE Project</title>
+    <link rel="stylesheet" href="./asset3/scss/main.css">
+
 </head>
 <body>
-    <footer>
+    <section class="greenCheck">
+            <h2> We love green energy and renewable <br> energy sources. Does your provider?</h2>
+            <p>Enter a website URL in the field below to look check if the site providers <br> use green and renewable energy sources for hosting.</p>
+            <form id="greenCheckForm">
+                <input type="text" id="website-url" name="website-url" placeholder="www.website.com" required>
+                <button type="submit">BEGIN</button>
+            </form>
+            <div id="api-result"></div>
+            <div class="top-circle"><h3>RESOURCES</div>
+    </section>
+    <section class="resources">
+        <h2>EVERY Byte MATTERS</h2>
+        <p>We work towards a cleaner internet, free <br> from as much carbon mission as possible. <br>
+            There are many things you can do as a web <br> developer to help. Read more about how you <br> can contribute here
+        </p>
+        <div class="resourceList">
+            <ul>
+                <li><a href="https://sustainablewebdesign.org/">Sustainable Web Design</a></li>
+                <li><a href="https://thegreenfoundation.org/">The Green Foundation</a></li>
+                <li><a href="https://www.websitecarbon.com/">Website Carbon</a></li>
+            </ul>
+        </div>
+        <div class="bigCircle"></div>
+    </section>
 
-    </footer>
-    
+    <script src="./asset3/js/script.js"></script>
 </body>
 </html>
