@@ -1,29 +1,21 @@
 //*HELPERS
-@use '../helpers/variables' as *;
-@use '../helpers/animations';
+@import '../helpers/variables';
+@import '../helpers/animations';
 
 .greenCheck {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $primary-green;
+    background-color: red;
     align-items: center;
     padding: 1rem;
     text-align: center;
-    height: 100vh; 
-
+    height: 100vh;
     h2 {
         color: $yellow;
         margin-bottom: 2rem;
         font-size: 2rem;
-
-        @media (max-width: 768px) {
-            br {
-                display: none;
-            }
-        }
-    }
-
+        margin-top: -20rem;
     p {
         color: $yellow;
         margin-bottom: 2.5rem;
@@ -39,13 +31,15 @@
         flex-direction: column;
         align-items: center;
         
+
         input {
-            padding: 1rem;
+            padding: rem;
             background-color: $light-green;
             border: 1px solid $primary-green;
             border-radius: 3rem;
             margin-bottom: 5rem;
-            width: 500px; 
+            width: 272px;
+            height: -15px;
 
             &::placeholder {
                 font-size: 1rem;
@@ -56,30 +50,58 @@
 
             &:focus {
                 border-color: $yellow;
-                outline: none; 
+                outline: none;
             }
 
-            //*MOBILE 
+            //*MOBILE
             @media (max-width: 768px) {
-                width: 400px;
+                width: 272px;
+                height: 0px;
             }
-        }
+            .greenCheck{
+                .green_input{
+                    input{
+                        background-color: red;
+                        border: 1px solid $primary-green;
+                        border-radius: 3rem;
+                        margin-bottom: 5rem;
+                        width: 272px;
+                        height: 25px;
+                        &::placeholder {
+                            font-size: 1rem;
+                            font-family: $font-family;
+                            color: $secondary-green;
+                            text-align: center;
+                        }
+            
+                        &:focus {
+                            border-color: $yellow;
+                            outline: none;
+                        }
 
-        button {
-            padding: 10px 20px;
-            background-color: $light-green;
-            color: $secondary-green;
-            font-family: $font-family;
-            font-size: 1rem;
-            border: none;
-            border-radius: 5rem;
-            width: 10rem;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $yellow;
+                }
+                
+        
+                   
             }
-        }
+    
+            button {
+                padding: 10px 20px;
+                background-color: $light-green;
+                color: $secondary-green;
+                font-family: $font-family;
+                font-size: 1rem;
+                border: none;
+                border-radius: 5rem;
+                width: 10rem;
+                cursor: pointer;
+    
+                &:hover {
+                    background-color: $yellow;
+                }
+            }
+            }
+       
     }
             .top-circle{
                 width:90px;
@@ -93,7 +115,7 @@
                 margin-top: 40px;
                 margin-bottom: -320px;
                 z-index: 2;
-                
+
                 h3{
                     color: $secondary-green;
                     font-weight: 200;
@@ -105,8 +127,8 @@
                     justify-content: center;
                     text-align: center;
                 }
-                animation: pulse 10s infinite;  
-            } 
+                animation: pulse 10s infinite;
+            }
 
             @media (min-width: 1200px) {
                 .top-circle{
@@ -121,7 +143,7 @@
                     margin-top: 90px;
                     margin-bottom: -300px;
                     z-index: 2;
-                    
+
                     h3{
                         color: $secondary-green;
                         font-weight: 200;
@@ -132,8 +154,10 @@
                         display: flex;
                         justify-content: center;
                         text-align: center;
-                    }  
-                    animation: pulse 10s infinite; 
-                } 
+                    }
+                    animation: pulse 10s infinite;
+                }
             }
-        } 
+        }
+}
+}

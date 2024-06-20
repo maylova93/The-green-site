@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate(5px) rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg) translate(10px) rotate(-45deg);
+  }
+  100% {
+    transform: rotate(90deg) translate(10px) rotate(-90deg);
+  }
+  0% {
+    transform: rotate(90deg) translate(10px) rotate(-90deg);
+  }
+}
+.greenCheck {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: red;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  height: 100vh;
+}
+.greenCheck h2 {
+  color: #E6FF94;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-top: -20rem;
+}
+.greenCheck h2 p {
+  color: #E6FF94;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .greenCheck h2 p {
+    color: #FFFFFF;
+  }
+}
+.greenCheck h2 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.greenCheck h2 form input {
+  padding: rem;
+  background-color: #A5DD9B;
+  border: 1px solid #40A578;
+  border-radius: 3rem;
+  margin-bottom: 5rem;
+  width: 272px;
+  height: -15px;
+}
+.greenCheck h2 form input::-moz-placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #006769;
+  text-align: center;
+}
+.greenCheck h2 form input::placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #006769;
+  text-align: center;
+}
+.greenCheck h2 form input:focus {
+  border-color: #E6FF94;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .greenCheck h2 form input {
+    width: 272px;
+    height: 0px;
+  }
+}
+.greenCheck h2 form input .greenCheck .green_input input {
+  background-color: red;
+  border: 1px solid #40A578;
+  border-radius: 3rem;
+  margin-bottom: 5rem;
+  width: 272px;
+  height: 25px;
+}
+.greenCheck h2 form input .greenCheck .green_input input::-moz-placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #006769;
+  text-align: center;
+}
+.greenCheck h2 form input .greenCheck .green_input input::placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #006769;
+  text-align: center;
+}
+.greenCheck h2 form input .greenCheck .green_input input:focus {
+  border-color: #E6FF94;
+  outline: none;
+}
+.greenCheck h2 form input .greenCheck button {
+  padding: 10px 20px;
+  background-color: #A5DD9B;
+  color: #006769;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5rem;
+  width: 10rem;
+  cursor: pointer;
+}
+.greenCheck h2 form input .greenCheck button:hover {
+  background-color: #E6FF94;
+}
+.greenCheck h2 form .top-circle {
+  width: 90px;
+  height: 90px;
+  margin-left: -230px;
+  margin-top: 145px;
+  background-color: #A5DD9B;
+  border-radius: 50%;
+  border: 8px solid #40A578;
+  margin-left: -350px;
+  margin-top: 40px;
+  margin-bottom: -320px;
+  z-index: 2;
+  animation: pulse 10s infinite;
+}
+.greenCheck h2 form .top-circle h3 {
+  color: #006769;
+  font-weight: 200;
+  line-height: 14px;
+  font-size: 14px;
+  font-family: "Ubuntu Mono", monospace;
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .greenCheck h2 form .top-circle {
+    width: 200px;
+    height: 200px;
+    margin-left: -230px;
+    margin-top: 145px;
+    background-color: #A5DD9B;
+    border-radius: 50%;
+    border: 10px solid #40A578;
+    margin-left: -1100px;
+    margin-top: 90px;
+    margin-bottom: -300px;
+    z-index: 2;
+    animation: pulse 10s infinite;
+  }
+  .greenCheck h2 form .top-circle h3 {
+    color: #006769;
+    font-weight: 200;
+    line-height: 24px;
+    font-size: 24px;
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 93px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.resources {
+  position: relative;
+  background-color: #A5DD9B;
+  padding: 1rem;
+  height: 100vh;
+  overflow: hidden;
+}
+.resources h2 {
+  color: #006769;
+  font-size: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+}
+@media (max-width: 768px) {
+  .resources h2 {
+    margin-top: 10rem;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+}
+.resources p {
+  color: #006769;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-left: 5rem;
+}
+@media (max-width: 768px) {
+  .resources p {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+}
+.resources p a {
+  color: #006769;
+  text-decoration: none;
+  font-weight: bold;
+}
+.resources p a:hover {
+  text-decoration: underline;
+}
+.resources .resourceList {
+  margin-top: 2rem;
+}
+.resources .resourceList ul {
+  color: #006769;
+  margin-top: 3rem;
+  margin-left: 5.5rem;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .resources .resourceList ul {
+    margin-left: 2rem;
+  }
+}
+.resources .resourceList ul li {
+  margin-bottom: 2rem;
+}
+.resources .resourceList ul li a {
+  color: #006769;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.resources .resourceList ul li a:hover {
+  text-decoration: underline;
+}
+.resources .bigCircle {
+  position: absolute;
+  top: 100px;
+  right: -200px;
+  width: 1000px;
+  height: 1000px;
+  border: 2px solid #006769;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .resources .bigCircle {
+    display: none;
+  }
+}

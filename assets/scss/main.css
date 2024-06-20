@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import './pages/side3-4.css';
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -24,10 +27,349 @@
     transform: rotate(90deg) translate(10px) rotate(-90deg);
   }
 }
+.container2 {
+  display: flex;
+  width: 100%;
+  padding: 50px 30px;
+  text-align: left;
+  line-height: 25px;
+}
+.container2 .content h1 {
+  padding-left: 10rem;
+  font-size: 4rem;
+  color: #E6FF94;
+  font-family: "Ubuntu Mono", monospace;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+.container2 .content p {
+  font-size: 14px;
+  padding-left: 10rem;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+@media (min-width: 1200px) {
+  .container2 .content h1 {
+    font-size: 50px;
+    line-height: 55px;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+  .container2 .content p {
+    font-size: 24px;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-left: 3rem;
+  }
+}
+
+.circle-1 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.circle-1 img {
+  width: 100%;
+  max-width: 600px;
+}
+@media (max-width: 1024px) {
+  .circle-1 {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: #40A578;
+  padding: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer .footer-container .footer-section {
+  flex: 1;
+  margin: 20px;
+}
+.footer .footer-container .footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.footer .footer-container .footer-section p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.footer .footer-container .footer-section .footer-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer .footer-container .footer-section .footer-link:hover {
+  text-decoration: underline;
+}
+.footer .footer-container .footer-section .newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer-container .footer-section .newsletter-input {
+  padding: 6px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: #E6FF94;
+  color: #40A578;
+  flex: 1;
+}
+.footer .footer-container .footer-section .newsletter-submit {
+  padding: 6px 12px;
+  border: 3px solid #E6FF94;
+  border-radius: 20px;
+  background-color: #40A578;
+  color: #FFFFFF;
+}
+.footer .footer-container .footer-section .newsletter-submit:hover {
+  background-color: #daff61;
+}
+.footer .footer-container .footer-logo-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-container .footer-logo-section .footer-logo {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-container .footer-logo-section .footer-logo img {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer .footer-logo-section {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-logo img {
+    width: 50%;
+  }
+  .footer .newsletter-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .newsletter-input {
+    width: 80%;
+  }
+  .footer .newsletter-submit {
+    width: 80%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate(5px) rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg) translate(10px) rotate(-45deg);
+  }
+  100% {
+    transform: rotate(90deg) translate(10px) rotate(-90deg);
+  }
+  0% {
+    transform: rotate(90deg) translate(10px) rotate(-90deg);
+  }
+}
+.greenCheck {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: red;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  height: 100vh;
+}
+.greenCheck h2 {
+  color: #E6FF94;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-top: -20rem;
+}
+.greenCheck h2 p {
+  color: #E6FF94;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .greenCheck h2 p {
+    color: #FFFFFF;
+  }
+}
+.greenCheck h2 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.greenCheck h2 form input {
+  padding: rem;
+  background-color: #A5DD9B;
+  border: 1px solid #40A578;
+  border-radius: 3rem;
+  margin-bottom: 5rem;
+  width: 272px;
+  height: -15px;
+}
+.greenCheck h2 form input::-moz-placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #006769;
+  text-align: center;
+}
+.greenCheck h2 form input::placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #006769;
+  text-align: center;
+}
+.greenCheck h2 form input:focus {
+  border-color: #E6FF94;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .greenCheck h2 form input {
+    width: 272px;
+    height: 0px;
+  }
+}
+.greenCheck h2 form input .greenCheck .green_input input {
+  background-color: red;
+  border: 1px solid #40A578;
+  border-radius: 3rem;
+  margin-bottom: 5rem;
+  width: 272px;
+  height: 25px;
+}
+.greenCheck h2 form input .greenCheck .green_input input::-moz-placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #006769;
+  text-align: center;
+}
+.greenCheck h2 form input .greenCheck .green_input input::placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #006769;
+  text-align: center;
+}
+.greenCheck h2 form input .greenCheck .green_input input:focus {
+  border-color: #E6FF94;
+  outline: none;
+}
+.greenCheck h2 form input .greenCheck button {
+  padding: 10px 20px;
+  background-color: #A5DD9B;
+  color: #006769;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5rem;
+  width: 10rem;
+  cursor: pointer;
+}
+.greenCheck h2 form input .greenCheck button:hover {
+  background-color: #E6FF94;
+}
+.greenCheck h2 form .top-circle {
+  width: 90px;
+  height: 90px;
+  margin-left: -230px;
+  margin-top: 145px;
+  background-color: #A5DD9B;
+  border-radius: 50%;
+  border: 8px solid #40A578;
+  margin-left: -350px;
+  margin-top: 40px;
+  margin-bottom: -320px;
+  z-index: 2;
+  animation: pulse 10s infinite;
+}
+.greenCheck h2 form .top-circle h3 {
+  color: #006769;
+  font-weight: 200;
+  line-height: 14px;
+  font-size: 14px;
+  font-family: "Ubuntu Mono", monospace;
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .greenCheck h2 form .top-circle {
+    width: 200px;
+    height: 200px;
+    margin-left: -230px;
+    margin-top: 145px;
+    background-color: #A5DD9B;
+    border-radius: 50%;
+    border: 10px solid #40A578;
+    margin-left: -1100px;
+    margin-top: 90px;
+    margin-bottom: -300px;
+    z-index: 2;
+    animation: pulse 10s infinite;
+  }
+  .greenCheck h2 form .top-circle h3 {
+    color: #006769;
+    font-weight: 200;
+    line-height: 24px;
+    font-size: 24px;
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 93px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 body {
   background-color: #40A578;
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu Mono", monospace;
 }
 
 header {
@@ -60,7 +402,7 @@ main .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
 }
 main .big-circle {
   width: 340px;
@@ -125,7 +467,6 @@ main .top-circle h3 {
   width: 480px;
   height: 480px;
   background-color: #A5DD9B;
-  margin: auto;
 }
 .calculate h2 {
   font-size: 20px;
@@ -172,6 +513,18 @@ main .top-circle h3 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.calculate input::-moz-placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #FFFFFF;
+  text-align: center;
+}
+.calculate input::placeholder {
+  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #FFFFFF;
+  text-align: center;
+}
 .calculate button {
   width: 108px;
   height: 25px;
@@ -196,7 +549,7 @@ main .top-circle h3 {
   background-color: #40A578;
   border: 6px solid #A5DD9B;
   margin-left: 60px;
-  margin-top: 15px;
+  margin-top: 60px;
   animation: pulse 10s infinite;
 }
 .calculate .top-circle h3 {
