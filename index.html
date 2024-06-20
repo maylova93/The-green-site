@@ -5,9 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WCE Project</title>
     <link rel="stylesheet" href="/assets/scss/footer.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
+  <link rel="stylesheet" href="./asset3/scss/main.css">
+    <script src= "assets/js/script.js" type="module" defer></script>
+  <script src="./asset3/js/script.js"></script>
 </head>
 <body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="#calculate">CALCULATE /</a></li>
+            <li><a href="#">GREENCHECK /</a></li>
+            <li><a href="#">OUR MISSION /</a></li>
+            <li><a href="#">RESOURCES</a></li>
+        </ul>
+    </nav>
+    </header>
     <main>
+        <div class="container">
+        <div class="big-circle">
+            <h1>Web<br>Carbon<br> Emission<br>Project</h1>
+            <div class="small-circle"><h2>SCROLL DOWN TO<br> LEARN MORE</h2></div>
+            <div class="top-circle"><h3>CALCULATE</h3></div>
+         </div>
+        </div>
+        <section class="calculate" id="calculate">
+            <h2>DID YOU KNOW</h2>
+            <p>The internet alone consumes <br> 416,2TWh electricity per year</p>
+            <p class="text">To begin calculation how much CO2 your website uses enter the URL<br>
+                 in the field below and hit calculate</p>
+                <input type="text" id="website" name="website" placeholder="www.website.com" >
+                <button type="button" id="calculateButton">CALCULATE</button>
+                <p id="result"></p>
+            <div class="top-circle"><h3>GREEN<br>CHECK</h3></div>
+            <!-- </section>
+        <section class="footer">
+            <h5>footer</h5>
+        <div class="fot">
+            <div class="huge_circle">
+            <h2>WCE<br><span>project</span></h2>
+            <div class="small-circle"></h2></div>
+            </div>
+        </div>
+        </section> -->
+  
+    <section class="greenCheck">
+            <h2> We love green energy and renewable <br> energy sources. Does your provider?</h2>
+            <p>Enter a website URL in the field below to look check if the site providers <br> use green and renewable energy sources for hosting.</p>
+            <form id="greenCheckForm">
+                <input type="text" id="website-url" name="website-url" placeholder="www.website.com" required>
+                <button type="submit">BEGIN</button>
+            </form>
+            <div id="api-result"></div>
+            <div class="top-circle"><h3>RESOURCES</div>
+    </section>
+    <section class="resources">
+        <h2>EVERY Byte MATTERS</h2>
+        <p>We work towards a cleaner internet, free <br> from as much carbon mission as possible. <br>
+            There are many things you can do as a web <br> developer to help. Read more about how you <br> can contribute here
+        </p>
+        <div class="resourceList">
+            <ul>
+                <li><a href="https://sustainablewebdesign.org/">Sustainable Web Design</a></li>
+                <li><a href="https://thegreenfoundation.org/">The Green Foundation</a></li>
+                <li><a href="https://www.websitecarbon.com/">Website Carbon</a></li>
+            </ul>
+        </div>
+        <div class="bigCircle"></div>
+    </section>
         <section class="container">
             <div class="content">
                 <h1>OUR sacred MISSION</h1>
@@ -55,5 +120,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
