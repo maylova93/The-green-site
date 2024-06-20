@@ -1,0 +1,12 @@
+//*COMPONENTS
+@use '../scss/components/greenCheck';
+@use '../scss/components/resources';
+
+
+//*HELPERS
+@use './helpers/variables' as *;
+
+body {
+    font-family: $font-family;
+    // background-color: $primary-green;
+}
