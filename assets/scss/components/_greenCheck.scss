@@ -6,16 +6,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: red;
+    background-color: $primary-green;
     align-items: center;
     padding: 1rem;
     text-align: center;
     height: 100vh;
+
     h2 {
         color: $yellow;
         margin-bottom: 2rem;
         font-size: 2rem;
         margin-top: -20rem;
+    }
+
     p {
         color: $yellow;
         margin-bottom: 2.5rem;
@@ -30,19 +33,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
 
-        input {
-            padding: 0;
-            background-color: red;
+        #website-url {
+            padding: 10px;
+            background-color: $light-green;
             border: 1px solid $primary-green;
             border-radius: 3rem;
-            margin-bottom: 5rem;
-            width: 272px;
-            height: -15px;
+            margin-bottom: 2rem;
+            color: $secondary-green;
+            font-family: $font-family;
+            width: 700px;
+            height: 20px;
 
             &::placeholder {
-                font-size: 1rem;
+                font-size: 16px;
                 font-family: $font-family;
                 color: $secondary-green;
                 text-align: center;
@@ -52,112 +56,56 @@
                 border-color: $yellow;
                 outline: none;
             }
+        }
 
-            //*MOBILE
-            @media (max-width: 768px) {
-                width: 272px;
-                height: 70px;
-            }
-            .greenCheck{
-                .green_input{
-                    input{
-                        background-color: red;
-                        border: 1px solid $primary-green;
-                        border-radius: 3rem;
-                        margin-bottom: 5rem;
-                        width: 272px;
-                        height: 25px;
-                        &::placeholder {
-                            font-size: 1rem;
-                            font-family: $font-family;
-                            color: $secondary-green;
-                            text-align: center;
-                        }
-            
-                        &:focus {
-                            border-color: $yellow;
-                            outline: none;
-                        }
-
-                }
-                
         
-                   
-            }
-    
-            button {
-                padding: 10px 20px;
-                background-color: $light-green;
-                color: $secondary-green;
-                font-family: $font-family;
-                font-size: 1rem;
-                border: none;
-                border-radius: 5rem;
-                width: 10rem;
-                cursor: pointer;
-    
-                &:hover {
-                    background-color: $yellow;
-                }
-            }
-            }
-       
-    }
-            .top-circle{
-                width:90px;
-                height:90px;
-                margin-left: -230px;
-                margin-top:145px;
-                background-color: $light-green;
-                border-radius: 50%;
-                border: 8px solid $primary-green;
-                margin-left: -350px;
-                margin-top: 40px;
-                margin-bottom: -320px;
-                z-index: 2;
-
-                h3{
-                    color: $secondary-green;
-                    font-weight: 200;
-                    line-height: 14px;
-                    font-size: 14px;
-                    font-family: $font-family;
-                    margin-top: 38px;
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                }
-                animation: pulse 10s infinite;
-            }
-
-            @media (min-width: 1200px) {
-                .top-circle{
-                    width:200px;
-                    height:200px;
-                    margin-left: -230px;
-                    margin-top:145px;
-                    background-color: $light-green;
-                    border-radius: 50%;
-                    border: 10px solid $primary-green;
-                    margin-left: -1100px;
-                    margin-top: 90px;
-                    margin-bottom: -300px;
-                    z-index: 2;
-
-                    h3{
-                        color: $secondary-green;
-                        font-weight: 200;
-                        line-height: 24px;
-                        font-size: 24px;
-                        font-family: $font-family;
-                        margin-top: 93px;
-                        display: flex;
-                        justify-content: center;
-                        text-align: center;
-                    }
-                    animation: pulse 10s infinite;
-                }
+        @media (max-width: 768px) {
+            #website-url {
+                width: 267px;
+                height: 5px; 
             }
         }
-}
+    }
+
+    .top-circle {
+        width: 90px;
+        height: 90px;
+        background-color: $light-green;
+        border-radius: 50%;
+        border: 8px solid $primary-green;
+        margin-left: -350px;
+        margin-top: 40px;
+        margin-bottom: -320px;
+        z-index: 2;
+
+        h3 {
+            color: $secondary-green;
+            font-weight: 200;
+            line-height: 14px;
+            font-size: 14px;
+            font-family: $font-family;
+            margin-top: 38px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        animation: pulse 10s infinite;
+    }
+
+    @media (min-width: 1200px) {
+        .top-circle {
+            width: 200px;
+            height: 200px;
+            border: 10px solid $primary-green;
+            margin-left: -1100px;
+            margin-top: 90px;
+            margin-bottom: -300px;
+
+            h3 {
+                line-height: 24px;
+                font-size: 24px;
+                margin-top: 93px;
+            }
+        }
+    }
 }

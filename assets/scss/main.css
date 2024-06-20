@@ -216,7 +216,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: red;
+  background-color: #40A578;
   align-items: center;
   padding: 1rem;
   text-align: center;
@@ -228,95 +228,57 @@
   font-size: 2rem;
   margin-top: -20rem;
 }
-.greenCheck h2 p {
+.greenCheck p {
   color: #E6FF94;
   margin-bottom: 2.5rem;
   font-size: 1rem;
 }
 @media (max-width: 768px) {
-  .greenCheck h2 p {
+  .greenCheck p {
     color: #FFFFFF;
   }
 }
-.greenCheck h2 form {
+.greenCheck form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.greenCheck h2 form input {
-  padding: 0;
-  background-color: red;
+.greenCheck form #website-url {
+  padding: 10px;
+  background-color: #A5DD9B;
   border: 1px solid #40A578;
   border-radius: 3rem;
-  margin-bottom: 5rem;
-  width: 272px;
-  height: -15px;
+  margin-bottom: 2rem;
+  color: #006769;
+  font-family: "Ubuntu Mono", monospace;
+  width: 700px;
+  height: 20px;
 }
-.greenCheck h2 form input::-moz-placeholder {
-  font-size: 1rem;
+.greenCheck form #website-url::-moz-placeholder {
+  font-size: 16px;
   font-family: "Ubuntu Mono", monospace;
   color: #006769;
   text-align: center;
 }
-.greenCheck h2 form input::placeholder {
-  font-size: 1rem;
+.greenCheck form #website-url::placeholder {
+  font-size: 16px;
   font-family: "Ubuntu Mono", monospace;
   color: #006769;
   text-align: center;
 }
-.greenCheck h2 form input:focus {
+.greenCheck form #website-url:focus {
   border-color: #E6FF94;
   outline: none;
 }
 @media (max-width: 768px) {
-  .greenCheck h2 form input {
-    width: 272px;
-    height: 70px;
+  .greenCheck form #website-url {
+    width: 267px;
+    height: 5px;
   }
 }
-.greenCheck h2 form input .greenCheck .green_input input {
-  background-color: red;
-  border: 1px solid #40A578;
-  border-radius: 3rem;
-  margin-bottom: 5rem;
-  width: 272px;
-  height: 25px;
-}
-.greenCheck h2 form input .greenCheck .green_input input::-moz-placeholder {
-  font-size: 1rem;
-  font-family: "Ubuntu Mono", monospace;
-  color: #006769;
-  text-align: center;
-}
-.greenCheck h2 form input .greenCheck .green_input input::placeholder {
-  font-size: 1rem;
-  font-family: "Ubuntu Mono", monospace;
-  color: #006769;
-  text-align: center;
-}
-.greenCheck h2 form input .greenCheck .green_input input:focus {
-  border-color: #E6FF94;
-  outline: none;
-}
-.greenCheck h2 form input .greenCheck button {
-  padding: 10px 20px;
-  background-color: #A5DD9B;
-  color: #006769;
-  font-family: "Ubuntu Mono", monospace;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5rem;
-  width: 10rem;
-  cursor: pointer;
-}
-.greenCheck h2 form input .greenCheck button:hover {
-  background-color: #E6FF94;
-}
-.greenCheck h2 form .top-circle {
+.greenCheck .top-circle {
   width: 90px;
   height: 90px;
-  margin-left: -230px;
-  margin-top: 145px;
   background-color: #A5DD9B;
   border-radius: 50%;
   border: 8px solid #40A578;
@@ -326,7 +288,7 @@
   z-index: 2;
   animation: pulse 10s infinite;
 }
-.greenCheck h2 form .top-circle h3 {
+.greenCheck .top-circle h3 {
   color: #006769;
   font-weight: 200;
   line-height: 14px;
@@ -338,30 +300,18 @@
   text-align: center;
 }
 @media (min-width: 1200px) {
-  .greenCheck h2 form .top-circle {
+  .greenCheck .top-circle {
     width: 200px;
     height: 200px;
-    margin-left: -230px;
-    margin-top: 145px;
-    background-color: #A5DD9B;
-    border-radius: 50%;
     border: 10px solid #40A578;
     margin-left: -1100px;
     margin-top: 90px;
     margin-bottom: -300px;
-    z-index: 2;
-    animation: pulse 10s infinite;
   }
-  .greenCheck h2 form .top-circle h3 {
-    color: #006769;
-    font-weight: 200;
+  .greenCheck .top-circle h3 {
     line-height: 24px;
     font-size: 24px;
-    font-family: "Ubuntu Mono", monospace;
     margin-top: 93px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
   }
 }
 
