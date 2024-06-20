@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .greenCheck {
   display: flex;
   flex-direction: column;
@@ -6,7 +17,6 @@
   background-color: #40A578;
   align-items: center;
   padding: 1rem;
-  border-radius: 0.5rem;
   text-align: center;
   height: 100vh;
 }
@@ -78,12 +88,63 @@
 .greenCheck form button:hover {
   background-color: #E6FF94;
 }
+.greenCheck .top-circle {
+  width: 90px;
+  height: 90px;
+  margin-left: -230px;
+  margin-top: 145px;
+  background-color: #A5DD9B;
+  border-radius: 50%;
+  border: 8px solid #40A578;
+  margin-left: -350px;
+  margin-top: 40px;
+  margin-bottom: -320px;
+  z-index: 2;
+  animation: pulse 10s infinite;
+}
+.greenCheck .top-circle h3 {
+  color: #006769;
+  font-weight: 200;
+  line-height: 14px;
+  font-size: 14px;
+  font-family: "Ubuntu Mono", monospace;
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .greenCheck .top-circle {
+    width: 200px;
+    height: 200px;
+    margin-left: -230px;
+    margin-top: 145px;
+    background-color: #A5DD9B;
+    border-radius: 50%;
+    border: 10px solid #40A578;
+    margin-left: -1100px;
+    margin-top: 90px;
+    margin-bottom: -300px;
+    z-index: 2;
+    animation: pulse 10s infinite;
+  }
+  .greenCheck .top-circle h3 {
+    color: #006769;
+    font-weight: 200;
+    line-height: 24px;
+    font-size: 24px;
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 93px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
 
 .resources {
   position: relative;
   background-color: #A5DD9B;
   padding: 1rem;
-  border-radius: 0.5rem;
   height: 100vh;
   overflow: hidden;
 }

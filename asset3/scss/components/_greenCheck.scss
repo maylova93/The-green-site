@@ -1,5 +1,6 @@
 //*HELPERS
 @use '../helpers/variables' as *;
+@use '../helpers/animations';
 
 .greenCheck {
     display: flex;
@@ -8,7 +9,6 @@
     background-color: $primary-green;
     align-items: center;
     padding: 1rem;
-    border-radius: 0.5rem;
     text-align: center;
     height: 100vh; 
 
@@ -81,4 +81,59 @@
             }
         }
     }
-}
+            .top-circle{
+                width:90px;
+                height:90px;
+                margin-left: -230px;
+                margin-top:145px;
+                background-color: $light-green;
+                border-radius: 50%;
+                border: 8px solid $primary-green;
+                margin-left: -350px;
+                margin-top: 40px;
+                margin-bottom: -320px;
+                z-index: 2;
+                
+                h3{
+                    color: $secondary-green;
+                    font-weight: 200;
+                    line-height: 14px;
+                    font-size: 14px;
+                    font-family: $font-family;
+                    margin-top: 38px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+                animation: pulse 10s infinite;  
+            } 
+
+            @media (min-width: 1200px) {
+                .top-circle{
+                    width:200px;
+                    height:200px;
+                    margin-left: -230px;
+                    margin-top:145px;
+                    background-color: $light-green;
+                    border-radius: 50%;
+                    border: 10px solid $primary-green;
+                    margin-left: -1100px;
+                    margin-top: 90px;
+                    margin-bottom: -300px;
+                    z-index: 2;
+                    
+                    h3{
+                        color: $secondary-green;
+                        font-weight: 200;
+                        line-height: 24px;
+                        font-size: 24px;
+                        font-family: $font-family;
+                        margin-top: 93px;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                    }  
+                    animation: pulse 10s infinite; 
+                } 
+            }
+        } 
