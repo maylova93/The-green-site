@@ -189,44 +189,23 @@ main .top-circle h3 {
   background-color: #E6FF94;
   color: #40A578;
 }
-
-.footer {
-  width: 500px;
-  height: 1800px;
-}
-.footer .fot .huge_circle {
+.calculate .top-circle {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background-color: #40A578;
-  border: 3px solid #E6FF94;
-  margin-left: 320px;
-  margin-top: 120px;
+  border: 6px solid #A5DD9B;
+  margin-left: 60px;
+  margin-top: 15px;
+  animation: pulse 10s infinite;
 }
-.footer .fot .huge_circle h2 {
-  color: #E6FF94;
+.calculate .top-circle h3 {
+  color: #A5DD9B;
+  line-height: 14px;
+  font-size: 14px;
   font-family: "Ubuntu Mono", monospace;
-  font-weight: 100;
-  line-height: 16px;
-  font-size: 16px;
-  font-family: "Ubuntu Mono", monospace;
-  margin: auto;
-  margin-top: 23px;
-  margin-left: 10px;
-}
-.footer .fot .huge_circle h2 span {
-  color: #FFFFFF;
-}
-.footer .fot .huge_circle .small-circle {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background-color: #40A578;
-  border: 3px solid #E6FF94;
-  display: flex;
-  justify-content: center;
-  margin-left: 55px;
-  margin-top: -2px;
+  margin-top: 28px;
+  margin-left: 22px;
 }
 
 /* Media Queries */
@@ -328,5 +307,23 @@ main .top-circle h3 {
     border-radius: 77px;
     margin: auto;
     font-size: 16px;
+  }
+  .calculate .top-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #40A578;
+    border: 6px solid #A5DD9B;
+    margin-left: 130px;
+    margin-top: -35px;
+    animation: pulse 10s infinite;
+  }
+  .calculate .top-circle h3 {
+    color: #A5DD9B;
+    line-height: 26px;
+    font-size: 26px;
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 72px;
+    margin-left: 63px;
   }
 }
